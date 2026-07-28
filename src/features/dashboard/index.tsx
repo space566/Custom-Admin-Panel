@@ -33,9 +33,9 @@ export function Dashboard() {
       {/* ===== Main ===== */}
       <Main>
         <div className='mb-2 flex items-center justify-between space-y-2'>
-          <h1 className='text-2xl font-bold tracking-tight'>Dashboard</h1>
+          <h1 className='text-2xl font-bold tracking-tight'>داشبورد</h1>
           <div className='flex items-center space-x-2'>
-            <Button>Download</Button>
+            <Button>دانلود</Button>
           </div>
         </div>
         <Tabs
@@ -45,13 +45,13 @@ export function Dashboard() {
         >
           <div className='w-full overflow-x-auto pb-2'>
             <TabsList>
-              <TabsTrigger value='overview'>Overview</TabsTrigger>
-              <TabsTrigger value='analytics'>Analytics</TabsTrigger>
+              <TabsTrigger value='overview'>نمای کلی</TabsTrigger>
+              <TabsTrigger value='analytics'>تحلیل‌ها</TabsTrigger>
               <TabsTrigger value='reports' disabled>
-                Reports
+                گزارش‌ها
               </TabsTrigger>
               <TabsTrigger value='notifications' disabled>
-                Notifications
+                اعلان‌ها
               </TabsTrigger>
             </TabsList>
           </div>
@@ -60,7 +60,7 @@ export function Dashboard() {
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
                   <CardTitle className='text-sm font-medium'>
-                    Total Revenue
+                    مجموع درآمد
                   </CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -76,16 +76,16 @@ export function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>$45,231.89</div>
+                  <div className='text-2xl font-bold'>۴۵٬۲۳۱٬۸۹۰ تومان</div>
                   <p className='text-xs text-muted-foreground'>
-                    +20.1% from last month
+                    ۲۰٫۱٪ رشد نسبت به ماه گذشته
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
                   <CardTitle className='text-sm font-medium'>
-                    Subscriptions
+                    اشتراک‌ها
                   </CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -103,15 +103,15 @@ export function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>+2350</div>
+                  <div className='text-2xl font-bold'>+۲٬۳۵۰</div>
                   <p className='text-xs text-muted-foreground'>
-                    +180.1% from last month
+                    ۱۸۰٫۱٪ افزایش نسبت به ماه گذشته
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-                  <CardTitle className='text-sm font-medium'>Sales</CardTitle>
+                  <CardTitle className='text-sm font-medium'>فروش</CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -127,16 +127,16 @@ export function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>+12,234</div>
+                  <div className='text-2xl font-bold'>+۱۲٬۲۳۴</div>
                   <p className='text-xs text-muted-foreground'>
-                    +19% from last month
+                    ۱۹٪ نسبت به ماه گذشته
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
                   <CardTitle className='text-sm font-medium'>
-                    Active Now
+                    هم‌اکنون فعال
                   </CardTitle>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -152,9 +152,9 @@ export function Dashboard() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>+573</div>
+                  <div className='text-2xl font-bold'>+۵۷۳</div>
                   <p className='text-xs text-muted-foreground'>
-                    +201 since last hour
+                    ۲۰۱ مورد افزایش از ساعت گذشته
                   </p>
                 </CardContent>
               </Card>
@@ -162,7 +162,7 @@ export function Dashboard() {
             <div className='grid grid-cols-1 gap-4 lg:grid-cols-7'>
               <Card className='col-span-1 lg:col-span-4'>
                 <CardHeader>
-                  <CardTitle>Overview</CardTitle>
+                  <CardTitle>نمای کلی</CardTitle>
                 </CardHeader>
                 <CardContent className='ps-2'>
                   <Overview />
@@ -170,9 +170,9 @@ export function Dashboard() {
               </Card>
               <Card className='col-span-1 lg:col-span-3'>
                 <CardHeader>
-                  <CardTitle>Recent Sales</CardTitle>
+                  <CardTitle>فروش‌های اخیر</CardTitle>
                   <CardDescription>
-                    You made 265 sales this month.
+                    در این ماه ۲۶۵ فروش ثبت کرده‌اید.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -192,25 +192,25 @@ export function Dashboard() {
 
 const topNav = [
   {
-    title: 'Overview',
+    title: 'نمای کلی',
     href: 'dashboard/overview',
     isActive: true,
     disabled: false,
   },
   {
-    title: 'Customers',
+    title: 'مشتریان',
     href: 'dashboard/customers',
     isActive: false,
     disabled: true,
   },
   {
-    title: 'Products',
+    title: 'محصولات',
     href: 'dashboard/products',
     isActive: false,
     disabled: true,
   },
   {
-    title: 'Settings',
+    title: 'تنظیمات',
     href: 'dashboard/settings',
     isActive: false,
     disabled: true,
