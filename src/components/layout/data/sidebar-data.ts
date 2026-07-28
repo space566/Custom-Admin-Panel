@@ -33,126 +33,98 @@ export const sidebarData: SidebarData = {
   },
   teams: [
     {
-      name: 'Shadcn Admin',
+      name: 'پنل مدیریت',
       logo: Command,
-      plan: 'Vite + ShadcnUI',
-    },
-    {
-      name: 'Acme Inc',
-      logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
-    },
-    {
-      name: 'Acme Corp.',
-      logo: AudioWaveform,
-      plan: 'Startup',
+      plan: 'ادمین + مدیر',
     },
   ],
   navGroups: [
     {
-      title: 'General',
+      title: 'عمومی',
       items: [
         {
-          title: 'Dashboard',
+          title: 'داشبورد',
           url: '/',
           icon: LayoutDashboard,
         },
         {
-          title: 'Tasks',
+          title: 'وظایف',
           url: '/tasks',
           icon: ListTodo,
         },
         {
-          title: 'Apps',
+          title: 'برنامه‌ها',
           url: '/apps',
           icon: Package,
         },
         {
-          title: 'Chats',
+          title: 'گفتگوها',
           url: '/chats',
           badge: '3',
           icon: MessagesSquare,
         },
         {
-          title: 'Users',
+          title: 'کاربران',
           url: '/users',
           icon: Users,
-        },
-        {
-          title: 'Secured by Clerk',
-          icon: ClerkLogo,
-          items: [
-            {
-              title: 'Sign In',
-              url: '/clerk/sign-in',
-            },
-            {
-              title: 'Sign Up',
-              url: '/clerk/sign-up',
-            },
-            {
-              title: 'User Management',
-              url: '/clerk/user-management',
-            },
-          ],
         },
       ],
     },
     {
-      title: 'Pages',
+      title: 'صفحات',
       items: [
         {
-          title: 'Auth',
+          title: 'احراز هویت',
           icon: ShieldCheck,
           items: [
             {
-              title: 'Sign In',
+              title: 'ورود',
               url: '/sign-in',
             },
             {
-              title: 'Sign In (2 Col)',
+              title: 'ورود (دو ستونه)',
               url: '/sign-in-2',
             },
             {
-              title: 'Sign Up',
+              title: 'ثبت‌نام',
               url: '/sign-up',
             },
             {
-              title: 'Forgot Password',
+              title: 'فراموشی رمز عبور',
               url: '/forgot-password',
             },
             {
-              title: 'OTP',
+              title: 'کد تأیید',
               url: '/otp',
             },
           ],
         },
         {
-          title: 'Errors',
+          title: 'خطاها',
           icon: Bug,
           items: [
             {
-              title: 'Unauthorized',
+              title: 'دسترسی غیرمجاز',
               url: '/errors/unauthorized',
               icon: Lock,
             },
             {
-              title: 'Forbidden',
+              title: 'دسترسی ممنوع',
               url: '/errors/forbidden',
               icon: UserX,
             },
             {
-              title: 'Not Found',
+              title: 'صفحه یافت نشد',
               url: '/errors/not-found',
               icon: FileX,
             },
             {
-              title: 'Internal Server Error',
+              title: 'خطای داخلی سرور',
               url: '/errors/internal-server-error',
               icon: ServerOff,
             },
             {
-              title: 'Maintenance Error',
+              title: 'خطای حالت تعمیر و نگهداری',
               url: '/errors/maintenance-error',
               icon: Construction,
             },
@@ -161,41 +133,41 @@ export const sidebarData: SidebarData = {
       ],
     },
     {
-      title: 'Other',
+      title: 'سایر',
       items: [
         {
-          title: 'Settings',
+          title: 'تنظیمات',
           icon: Settings,
           items: [
             {
-              title: 'Profile',
+              title: 'پروفایل',
               url: '/settings',
               icon: UserCog,
             },
             {
-              title: 'Account',
+              title: 'حساب کاربری',
               url: '/settings/account',
               icon: Wrench,
             },
             {
-              title: 'Appearance',
+              title: 'ظاهر',
               url: '/settings/appearance',
               icon: Palette,
             },
             {
-              title: 'Notifications',
+              title: 'اعلان‌ها',
               url: '/settings/notifications',
               icon: Bell,
             },
             {
-              title: 'Display',
+              title: 'نمایش',
               url: '/settings/display',
               icon: Monitor,
             },
           ],
         },
         {
-          title: 'Help Center',
+          title: 'مرکز راهنما',
           url: '/help-center',
           icon: HelpCircle,
         },

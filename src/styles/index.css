@@ -17,6 +17,17 @@
     @apply min-h-svh w-full bg-background text-foreground has-[div[data-variant='inset']]:bg-sidebar;
   }
 
+  body {
+    font-family: "Vazirmatn", sans-serif;
+  }
+
+  @theme inline {
+    --font-inter: "Inter", var(--font-sans);
+    --font-manrope: "Manrope", var(--font-sans);
+    --font-vazirmatn: "Vazirmatn", var(--font-sans);
+    --font-system: system-ui, sans-serif;
+  }
+
   /* Override Radix scroll locking for sticky headers */
   body[data-scroll-locked] {
     overflow: unset !important;
