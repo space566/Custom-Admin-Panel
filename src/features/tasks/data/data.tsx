@@ -13,41 +13,41 @@ import {
 export const labels = [
   {
     value: 'bug',
-    label: 'Bug',
+    label: 'باگ',
   },
   {
     value: 'feature',
-    label: 'Feature',
+    label: 'قابلیت',
   },
   {
     value: 'documentation',
-    label: 'Documentation',
+    label: 'مستندات',
   },
 ]
 
 export const statuses = [
   {
-    label: 'Backlog',
+    label: 'در صف انجام',
     value: 'backlog' as const,
     icon: HelpCircle,
   },
   {
-    label: 'Todo',
+    label: 'برای انجام',
     value: 'todo' as const,
     icon: Circle,
   },
   {
-    label: 'In Progress',
+    label: 'در حال انجام',
     value: 'in progress' as const,
     icon: Timer,
   },
   {
-    label: 'Done',
+    label: 'انجام شده',
     value: 'done' as const,
     icon: CheckCircle,
   },
   {
-    label: 'Canceled',
+    label: 'لغو شده',
     value: 'canceled' as const,
     icon: CircleOff,
   },
@@ -55,22 +55,22 @@ export const statuses = [
 
 export const priorities = [
   {
-    label: 'Low',
+    label: 'کم',
     value: 'low' as const,
     icon: ArrowDown,
   },
   {
-    label: 'Medium',
+    label: 'متوسط',
     value: 'medium' as const,
     icon: ArrowRight,
   },
   {
-    label: 'High',
+    label: 'زیاد',
     value: 'high' as const,
     icon: ArrowUp,
   },
   {
-    label: 'Critical',
+    label: 'بحرانی',
     value: 'critical' as const,
     icon: AlertCircle,
   },

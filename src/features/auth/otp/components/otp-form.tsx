@@ -64,7 +64,7 @@ export function OtpForm({ className, ...props }: OtpFormProps) {
           name='otp'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='sr-only'>One-Time Password</FormLabel>
+              <FormLabel className='sr-only'>کد یک‌بار مصرف</FormLabel>
               <FormControl>
                 <InputOTP
                   maxLength={6}
@@ -92,7 +92,7 @@ export function OtpForm({ className, ...props }: OtpFormProps) {
           )}
         />
         <Button className='mt-2' disabled={otp.length < 6 || isLoading}>
-          Verify
+          تأیید
         </Button>
       </form>
     </Form>

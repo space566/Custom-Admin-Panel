@@ -51,19 +51,19 @@ export function TasksDialogs() {
               }, 500)
               showSubmittedData(
                 currentRow,
-                'The following task has been deleted:'
+                'وظیفه زیر با موفقیت حذف شد:'
               )
             }}
             className='max-w-md'
-            title={`Delete this task: ${currentRow.id} ?`}
+            title={`حذف این وظیفه: ${currentRow.id} ?`}
             desc={
               <>
-                You are about to delete a task with the ID{' '}
+                شما در حال حذف وظیفه‌ای با شناسه زیر هستید: {' '}
                 <strong>{currentRow.id}</strong>. <br />
-                This action cannot be undone.
+                این عملیات قابل بازگشت نیست.
               </>
             }
-            confirmText='Delete'
+            confirmText='حذف'
           />
         </>
       )}
